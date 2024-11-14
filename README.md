@@ -53,7 +53,7 @@ The `index.js` file is already linked in the `HTML` file provided at the bottom 
 ```
 ##
 
-## 3. **Open index.html in your browser**
+## 3. **Open the index.html file in your browser**
 
 - [ ] Open a terminal in VS Code, navigate to your project directory and use `npx serve` to start a local server and view your `index.html` file in the browser.
 
@@ -63,8 +63,39 @@ The `index.js` file is already linked in the `HTML` file provided at the bottom 
 npx serve
 ```
 
-### Expected Browser Display:
+### Expected Browser Display
 
 ![A simple, informative web page titled 'So You Want to Be a Software Developer.' At the top, a large header reads the main title, followed by a tagline: 'Exploring the World of Coding and Development!' The page is divided into sections. The first section, 'Languages to Learn,' lists JavaScript, Python, React, and Databases. Next is 'Why Become a Developer?' describing reasons like problem-solving and creativity. The third section, 'Developer Skills,' covers tools like Git, debugging, teamwork, and responsive design. At the bottom, the footer encourages 'Happy Coding! - From ThriveDX](./assets/images/example2.png)
 
 ##
+
+### Step 4: Change the Main Title Color
+In this step, we’ll use JavaScript to change the color of the main title by targeting it solely through its unique `id` attribute. The `getElementById` method allows us to select elements by their `id` and directly modify their properties. Here, we’ll use it to access the `<h1>` element with `id="main-title"` and change its `style.color` to a new color after a 1-second delay.
+
+
+- Add the following code to `index.js`:
+
+```javascript
+  setTimeout(() => {
+    const mainTitle = document.getElementById("main-title");
+    mainTitle.style.color = "#ff6b6b";
+  }, 1000);
+```
+
+- [ ] Refresh the browser to apply the changes.
+
+### Expected Browser Display
+![A simple, informative web page titled 'So You Want to Be a Software Developer.' At the top, the main title appears in a new color, followed by a tagline: 'Exploring the World of Coding and Development!' The page is divided into sections. The first section, 'Languages to Learn,' lists JavaScript, Python, React, and Databases. Next is 'Why Become a Developer?' describing reasons like problem-solving and creativity. The third section, 'Developer Skills,' covers tools like Git, debugging, teamwork, and responsive design. At the bottom, the footer encourages 'Happy Coding! - From ThriveDX.'](/assets/images/example3.png)
+
+### Explanation
+- **`setTimeout` Function**: This function delays the execution of the code inside it by a specified time—in this case, 1000 milliseconds (1 second).
+- **Arrow Function Syntax**: Inside `setTimeout`, an arrow function `() => { ... }` is used to run the code after the delay, making the code concise and easy to read.
+- **`document.getElementById("main-title")`**: This line selects the `<h1>` element with the `id` of "main-title" from the HTML document. `getElementById` is used specifically for selecting elements by their unique `id`.
+- **Storing the Element in `mainTitle`**: The selected element is assigned to a constant variable called `mainTitle`, allowing us to reference this element for styling or other changes.
+- **Changing the Color with `style.color`**: The `style.color` property of `mainTitle` is set to `#ff6b6b`, which applies a new color to the title text after the 1-second delay.
+
+##
+
+
+
+
