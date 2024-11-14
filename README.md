@@ -53,16 +53,18 @@ The `index.js` file is already linked in the `HTML` file provided at the bottom 
 ```
 ##
 
-## 3. **Run `index.html` in the Browser**
+## 3. **Open index.html in your browser**
 
-- Open a terminal in VS Code, navigate to your project directory, and use `npx serve` to start a local server and view your `index.html` file in the browser. Run the following command:
+- [ ] Open a terminal in VS Code, navigate to your project directory and use `npx serve` to start a local server and view your `index.html` file in the browser.
+
+- [ ] Run the following command within the projects directory:
 
 ```bash
 npx serve
 ```
 
-### Expected Output:
+### Expected Browser Display:
 
-![A simple, informative web page titled 'So You Want to Be a Software Developer.' At the top, a large header reads the main title, followed by a tagline: 'Exploring the World of Coding and Development!' The page is divided into sections. The first section, 'Languages to Learn,' lists JavaScript, Python, React, and Databases. Next is 'Why Become a Developer?' describing reasons like problem-solving and creativity. The third section, 'Developer Skills,' covers tools like Git, debugging, teamwork, and responsive design. At the bottom, the footer encourages 'Happy Coding! - From ThriveDX](./assets/images/example.png)
+![A simple, informative web page titled 'So You Want to Be a Software Developer.' At the top, a large header reads the main title, followed by a tagline: 'Exploring the World of Coding and Development!' The page is divided into sections. The first section, 'Languages to Learn,' lists JavaScript, Python, React, and Databases. Next is 'Why Become a Developer?' describing reasons like problem-solving and creativity. The third section, 'Developer Skills,' covers tools like Git, debugging, teamwork, and responsive design. At the bottom, the footer encourages 'Happy Coding! - From ThriveDX](./assets/images/example2.png)
 
 ##
