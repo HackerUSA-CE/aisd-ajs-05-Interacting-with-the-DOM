@@ -1,7 +1,15 @@
-body {
-  font-family: Arial, sans-serif;
+/* Reset basic styling */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background-color: #f4f4f9;
   color: #333;
 }
@@ -22,9 +30,14 @@ header {
   font-style: italic;
 }
 
-.content {
+.main-content {
+  flex: 1; /* Ensures main content takes up remaining space */
   margin: 20px;
-  padding: 10px;
+}
+
+.content {
+  margin: 20px 0;
+  padding: 15px;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -33,19 +46,21 @@ header {
 .section-title {
   font-size: 1.5em;
   color: #0056b3;
+  margin-bottom: 10px;
 }
 
-.language {
+.language, .skill {
   color: #333;
   font-weight: bold;
   list-style-type: square;
 }
 
-.footer-note {
+footer {
   text-align: center;
   font-size: 0.9em;
   padding: 10px;
   background-color: #282c34;
   color: #fff;
   border-top: 1px solid #ddd;
+  margin-top: auto; /* Pushes footer to bottom */
 }
