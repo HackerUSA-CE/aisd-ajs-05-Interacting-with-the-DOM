@@ -73,7 +73,7 @@ npx serve
 In this step, we’ll use JavaScript to change the color of the main title by targeting it solely through its unique `id` attribute. The `getElementById` method allows us to select elements by their `id` and directly modify their properties. Here, we’ll use it to access the `<h1>` element with `id="main-title"` and change its `style.color` to a new color after a 1-second delay.
 
 
-- Add the following code to `index.js`:
+- [ ] Add the following code to `index.js`:
 
 ```javascript
   setTimeout(() => {
@@ -85,7 +85,7 @@ In this step, we’ll use JavaScript to change the color of the main title by ta
 - [ ] Refresh the browser to apply the changes.
 
 ### Expected Browser Display
-![A simple, informative web page titled 'So You Want to Be a Software Developer.' At the top, the main title appears in a new color, followed by a tagline: 'Exploring the World of Coding and Development!' The page is divided into sections. The first section, 'Languages to Learn,' lists JavaScript, Python, React, and Databases. Next is 'Why Become a Developer?' describing reasons like problem-solving and creativity. The third section, 'Developer Skills,' covers tools like Git, debugging, teamwork, and responsive design. At the bottom, the footer encourages 'Happy Coding! - From ThriveDX.'](/assets/images/example3.png)
+![A simple, informative web page titled 'So You Want to Be a Software Developer.' At the top, the main title appears in a new color, followed by a tagline: 'Exploring the World of Coding and Development!' The page is divided into sections. The first section, 'Languages to Learn,' lists JavaScript, Python, React, and Databases. Next is 'Why Become a Developer?' describing reasons like problem-solving and creativity. The third section, 'Developer Skills,' covers tools like Git, debugging, teamwork, and responsive design. At the bottom, the footer encourages 'Happy Coding! - From ThriveDX.'](./assets/images/example3.png)
 
 ### Explanation
 - **`setTimeout` Function**: This function delays the execution of the code inside it by a specified time—in this case, 1000 milliseconds (1 second).
