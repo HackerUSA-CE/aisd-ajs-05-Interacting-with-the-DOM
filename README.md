@@ -235,7 +235,7 @@ In this step, we’ll use `querySelectorAll` to select all elements with the cla
       skill.style.backgroundColor = "#e0e4e8";
       skill.style.padding = "5px";
       skill.style.borderRadius = "4px";
-    }, 300 * index);
+    }, 300);
   });
 ```
 
@@ -256,7 +256,7 @@ After applying this JavaScript code, each skill item should appear with a light 
 
 ##
 
-### 10: Additional Practice - Selecting Items with Class "language" to Change Text Color and Size
+## 10. Additional Practice - Selecting Items with Class "language" to Change Text Color and Size
 
 In this example, we’ll select all elements with the class `"language"` and change each item's color and font size. This time, we’ll skip using `setTimeout` for a gradual effect; while not essential, `setTimeout` was previously included as a learning tool to practice timed styling.
 
@@ -308,20 +308,45 @@ Now that you've completed your code changes, let's commit them and push to your 
 
 ##
 
-## Conclusion 📄
+# Conclusion 📄
 
-In this lab, we explored how to manipulate the DOM using JavaScript, applying various styling techniques to elements on a webpage. By using methods like `getElementById`, `getElementsByClassName`, `getElementsByTagName`, `querySelector`, and `querySelectorAll`, you practiced how to interact with specific HTML elements based on their ID, class, and tag. 
+In this lab, we explored various DOM manipulation techniques using JavaScript, covering element selection methods like `getElementById`, `getElementsByClassName`, `getElementsByTagName`, `querySelector`, and `querySelectorAll`. Each method allowed us to dynamically modify elements by targeting them through IDs, classes, and tags, creating an interactive and visually engaging web experience.
 
-We applied both immediate and staggered styling changes to demonstrate how you can enhance user interaction and create visually dynamic web pages. For example, sequential effects were achieved using `setTimeout`, allowing styles to be applied in timed intervals that visually highlight each element in sequence.
+The use of `setTimeout` was an optional approach in several steps. It allowed us to practice delayed and sequential styling to give the page a gradual, animated effect. However, applying styles immediately without `setTimeout` can simplify the code. Here’s an example of both approaches:
 
-### Key Takeaways:
-- DOM manipulation enables you to dynamically control how content appears on a webpage.
-- Using different JavaScript selection methods allows for targeted styling changes, giving you flexibility in styling individual elements, groups of elements, or all elements of a certain type.
-- Timed styling using `setTimeout` can add an engaging, animated effect, but immediate styling is also effective for straightforward visual adjustments.
+### Example: Styling `.skill` Elements with and without `setTimeout`
 
-By practicing these skills, you’ve learned how to make static HTML elements come to life with JavaScript, adding an interactive layer that enhances user experience. Keep experimenting with DOM manipulation methods as you build more complex pages and applications!
+- **With `setTimeout` for a gradual effect**:
+```javascript
+  const skills = document.querySelectorAll(".skill");
+  skills.forEach((skill, index) => {
+    setTimeout(() => {
+      skill.style.backgroundColor = "#e0e4e8";
+      skill.style.padding = "5px";
+      skill.style.borderRadius = "4px";
+    }, 300 * index); // Adds delay for a staggered effect
+  });
+```
 
+- **Without setTimeout for immediate styling**:
+```javascript
+const skills = document.querySelectorAll(".skill");
+skills.forEach((skill) => {
+  skill.style.backgroundColor = "#e0e4e8";
+  skill.style.padding = "5px";
+  skill.style.borderRadius = "4px";
+});
+```
 
+### Key Takeaways
+
+- **DOM Selection Mastery**: Knowing how to use `getElementById`, `getElementsByClassName`, `getElementsByTagName`, `querySelector`, and `querySelectorAll` gives you flexibility in selecting and styling elements based on unique IDs, classes, or tags.
+- **Immediate vs. Delayed Styling**: `setTimeout` can add a staggered or animated effect, but is optional for most styling changes. Immediate styling is more straightforward and is often the better choice for basic visual adjustments.
+- **Dynamic Styling**: By directly manipulating the `style` properties of elements, you can create interactive, visually dynamic pages that respond instantly to user interaction or page load.
+
+This lab provided a hands-on foundation in DOM manipulation that will be essential for building more complex, interactive web applications.
+
+##
 
 ### Solution codebase 👀
 🛑 **Only use this as a reference** 🛑

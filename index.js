@@ -37,7 +37,7 @@ skills.forEach((skill, index) => {
     skill.style.backgroundColor = "#e0e4e8";
     skill.style.padding = "5px";
     skill.style.borderRadius = "4px";
-  }, 300 * index);
+  }, 300);
 });
 
 // Applying alternating colors and font size to language items
